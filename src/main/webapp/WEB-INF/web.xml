@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>listCategory</servlet-name>
+        <servlet-class>com.example.restaurant.controller.category.listCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>listCategory</servlet-name>
+        <url-pattern>/category/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createCategory</servlet-name>
+        <servlet-class>com.example.restaurant.controller.category.createCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createCategory</servlet-name>
+        <url-pattern>/category/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editCategory</servlet-name>
+        <servlet-class>com.example.restaurant.controller.category.editCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editCategory</servlet-name>
+        <url-pattern>/category/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteCategory</servlet-name>
+        <servlet-class>com.example.restaurant.controller.category.deleteCategory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteCategory</servlet-name>
+        <url-pattern>/category/delete</url-pattern>
+    </servlet-mapping>
+<!--    // Food-->
+    <servlet>
+        <servlet-name>lists</servlet-name>
+        <servlet-class>com.example.restaurant.controller.food.lists</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lists</servlet-name>
+        <url-pattern>/food/lists</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>searchFood</servlet-name>
+        <servlet-class>com.example.restaurant.controller.food.searchFood</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchFood</servlet-name>
+        <url-pattern>/food/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>listFood</servlet-name>
+        <servlet-class>com.example.restaurant.controller.food.listFood</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>listFood</servlet-name>
+        <url-pattern>/food/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createFood</servlet-name>
+        <servlet-class>com.example.restaurant.controller.food.createFood</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createFood</servlet-name>
+        <url-pattern>/food/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteFood</servlet-name>
+        <servlet-class>com.example.restaurant.controller.food.deleteFood</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteFood</servlet-name>
+        <url-pattern>/food/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editFood</servlet-name>
+        <servlet-class>com.example.restaurant.controller.food.editFood</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editFood</servlet-name>
+        <url-pattern>/food/edit</url-pattern>
+    </servlet-mapping>
+<!--    gogin-->
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.example.restaurant.controller.account.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/account/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.example.restaurant.controller.account.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/account/register</url-pattern>
+    </servlet-mapping>
+
+</web-app>
